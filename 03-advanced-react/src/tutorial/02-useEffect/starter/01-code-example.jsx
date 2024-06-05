@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const CodeExample = () => {
   const [value, setValue] = useState(0);
+
+  const sayHello = () => {
+    console.log("Hello world")
+  }
+
+  sayHello()
+
+  useEffect(() => {
+    console.log("Hello from use effect!")
+  }, [])
 
   return (
     <div>
