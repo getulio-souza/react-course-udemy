@@ -15,7 +15,9 @@ import { useState, useEffect } from 'react';
 // import Starter from "../src/tutorial/02-useEffect/starter/05-cleanup-function"
 // import Starter from "../src/tutorial/05-leverage-javascript/starter/List"
 // import Starter from "../src/tutorial/05-leverage-javascript/starter/Person";
-import Starter from "../src/tutorial/06-forms/starter/01-controlled-inputs"
+// import Starter from "../src/tutorial/06-forms/starter/01-controlled-inputs"
+// import Starter from "../src/tutorial/06-forms/starter/02-user-challenge"
+import Starter from "../src/tutorial/06-forms/starter/03-multiple-inputs";
 
 function App() {
   return (
