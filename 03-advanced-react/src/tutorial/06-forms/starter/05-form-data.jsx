@@ -5,6 +5,19 @@ const UncontrolledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget)
+    // console.log(formData)
+    // const email = formData.get("email")
+    // formData is an array of arrays 
+    console.log([...formData.entries()]);
+
+    //Object.fromEntries returns an object with key pairs
+    const newUser = Object.fromEntries(formData)
+    console.log(newUser);
+    setValue(value + 1)
+    //clear all the inputs 
+    e.currentTarget.reset()
+
   };
   return (
     <div>

@@ -1,20 +1,22 @@
 import { useState } from "react";
 
 const MultipleInputs = () => {
+
   const [user, setUser] = useState({
+    //one state value to handle multiple inputs 
     name: "",
     email: "",
-    password: "",
-  });
+    password: ""
+  })
 
   const handleChange = (e) => {
-    console.log(e.target.name)
-    console.log(e.target.value);
+    console.log(e.target.value)
     setUser({...user, [e.target.name]: e.target.value})
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    // setUser({...user, [e.target.name]: e.target.value})
     console.log(user)
   }
   
